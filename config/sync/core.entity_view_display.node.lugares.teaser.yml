@@ -1,0 +1,34 @@
+uuid: 3a88431d-e231-42a7-9cdb-71bd59332cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lugares.body
+    - field.field.node.lugares.field_entity_lugares
+    - field.field.node.lugares.field_lugares
+    - node.type.lugares
+  module:
+    - text
+    - user
+id: node.lugares.teaser
+targetEntityType: node
+bundle: lugares
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_entity_lugares: true
+  field_lugares: true

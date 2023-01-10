@@ -1,0 +1,28 @@
+uuid: 723951ac-c01e-4692-ad0c-c26d3b628caa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entity_lugares
+    - node.type.lugares
+id: node.lugares.field_entity_lugares
+field_name: field_entity_lugares
+entity_type: node
+bundle: lugares
+label: 'Entity lugares'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lugares: lugares
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

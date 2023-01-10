@@ -1,0 +1,23 @@
+uuid: 2b587e0d-465f-4f9e-9122-1680b8f5f179
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recursos
+  module:
+    - text
+id: node.recursos.body
+field_name: body
+entity_type: node
+bundle: recursos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

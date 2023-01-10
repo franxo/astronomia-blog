@@ -1,0 +1,32 @@
+uuid: f15436f6-5cc4-487e-85ff-eb2b95754ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recursos.body
+    - field.field.node.recursos.field_recursos_media
+    - node.type.recursos
+  module:
+    - text
+    - user
+id: node.recursos.teaser
+targetEntityType: node
+bundle: recursos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_recursos_media: true

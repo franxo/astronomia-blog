@@ -1,0 +1,29 @@
+uuid: ea060865-a829-4170-b842-f2f6c903f3e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomy_actividades
+    - node.type.article
+    - taxonomy.vocabulary.actividades
+id: node.article.field_taxonomy_actividades
+field_name: field_taxonomy_actividades
+entity_type: node
+bundle: article
+label: 'Taxonomy actividades'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      actividades: actividades
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: 32d8b349-ce09-4513-b7a1-5e5bf5af9b71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recursos_media
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - node.type.recursos
+id: node.recursos.field_recursos_media
+field_name: field_recursos_media
+entity_type: node
+bundle: recursos
+label: 'Recursos media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

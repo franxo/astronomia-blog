@@ -1,0 +1,24 @@
+name: franxo_astronomia
+recipe: drupal9
+config:
+  webroot: web
+  php: '8.0'
+  via: apache:2.4
+  database: mariadb
+  composer_version: 2
+services:
+  appserver:
+    build:
+      - composer install
+    xdebug: "debug,develop"
+    config:
+      php: .lando/php.ini
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
+  database:
+    creds:
+      database: drupal9
+      password: drupal9
+      user: drupal9

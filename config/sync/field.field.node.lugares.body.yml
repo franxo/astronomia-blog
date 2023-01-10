@@ -1,0 +1,23 @@
+uuid: e0cc1c9d-ada9-40de-aadf-c01358c27cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lugares
+  module:
+    - text
+id: node.lugares.body
+field_name: body
+entity_type: node
+bundle: lugares
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
